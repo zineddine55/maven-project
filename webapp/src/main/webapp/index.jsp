@@ -1,3 +1,3 @@
 Hello, World!
 
-from Dakar (DKR)
+from DKR
