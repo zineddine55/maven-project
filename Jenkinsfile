@@ -1,6 +1,6 @@
 pipeline {
     
-    agent any tools { 
+    agent any { 
         maven 'localMaven'
         jdk 'localJDK'
         git 'localGit'
