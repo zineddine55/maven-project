@@ -28,14 +28,14 @@ stages{
             parallel{
                 stage ('Deploy to Staging'){
                     steps {
-                        bat "copy **/target/*.war 'C:/Program Files/apache-tomcat-8.5.28/webapps'"
+                        bat "cp **/target/*.war 'C:/Program Files/apache-tomcat-8.5.28/webapps'"
                                
                     }
                 }
  
                 stage ("Deploy to Production"){
                     steps {
-                     bat "copy **/target/*.war 'C:/Program Files/apache-tomcat-8.5.28-production/webapps'" 
+                        bat "cp **/target/*.war 'C:/Program Files/apache-tomcat-8.5.28-production/webapps'" 
                     }
                 }
             }
