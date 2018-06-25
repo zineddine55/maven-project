@@ -35,7 +35,7 @@ stages{
  
                 stage ("Deploy to Production"){
                     steps {
-                     bat "cp **/target/*.war 'C:/Program Files/apache-tomcat-8.5.28-production/webapps'"
+                     bat "cp **/target/*.war 'C:/Program Files/apache-tomcat-8.5.28-production/webapps'" 
                     }
                 }
             }
